@@ -5,23 +5,161 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>la Repubblica</title>
   <link rel="stylesheet" href="css/main-css.css">
+  <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body class="header-body">
-  <div class="main-header">
-    <h2>Header di prova</h2>
+  <div class="page-header">
+    <div class="page-header-content">
+      <div class="page-header-left">
+        <button>
+          <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="#5a5a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Menu</span>
+        </button>
+        <button>
+          <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15C11.381 15 12.6296 14.4415 13.5355 13.5355C14.4415 12.6296 15 11.381 15 10C15 7.23858 12.7614 5 10 5ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.5719 16.481 13.0239 15.6063 14.1921L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.1921 15.6063C13.0239 16.481 11.5719 17 10 17C6.13401 17 3 13.866 3 10Z" fill="#5a5a5a"/>
+          </svg>
+          <span>Cerca</span>
+        </button>
+      </div>
+      <div class="page-header-center">
+        <button>
+          <span>ABBONATI</span>
+        </button>
+      </div>
+      <div class="page-header-right">
+        <button>
+  	      <span>Accedi</span>
+          <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25Z" stroke="#5a5a5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.1303 13C13.8203 13 15.1903 11.63 15.1903 9.94C15.1903 8.25001 13.8203 6.88 12.1303 6.88C10.4403 6.88 9.07031 8.25001 9.07031 9.94C9.07031 11.63 10.4403 13 12.1303 13Z" stroke="#5a5a5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.5 19.11C6.80719 17.8839 7.51529 16.7956 8.51178 16.0179C9.50827 15.2403 10.736 14.818 12 14.818C13.264 14.818 14.4917 15.2403 15.4882 16.0179C16.4847 16.7956 17.1928 17.8839 17.5 19.11" stroke="#5a5a5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+	    </button>
+      </div>
+    </div>
   </div>
-  <div class="news-header">
-	<!--<img src="images/notizia_header.png" style="display: block;"></img>-->
-    <h2>Notizia di prova</h2>
+  <div class="top-news-header">
+    <div class="top-news-header-content">
+      <img src="images/notizia_header.png" style="aspect-ratio: 16 / 9; width:100%; height:auto; max-width: 166px;"></img>
+      <h2>Notizia di prova lunga abbastanza da far andare a capo il testo e verificarne il funzionamento</h2>
+    </div>
   </div>
-  <img src="images/laRepubblica.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></img>
-  <p style="text-transform: uppercase; color: #a3a3a3; text-align: center;"><span id="data-odierna"></span></p>
-  <script>
-    const opzioni = { day: 'numeric', month: 'long', year: 'numeric' };
-    const oggi = new Date().toLocaleDateString('it-IT', opzioni);
-    document.getElementById('data-odierna').textContent = oggi;
-  </script>
+  <div class="news-topper">
+    <div class="news-topper-content">
+      <img src="images/laRepubblica.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></img>
+      <p style="text-transform: uppercase; letter-spacing: .32px; color: #a3a3a3; text-align: center;"><span id="data-odierna"></span></p>
+      <script>
+        const opzioni = { day: 'numeric', month: 'long', year: 'numeric' };
+        const oggi = new Date().toLocaleDateString('it-IT', opzioni);
+        document.getElementById('data-odierna').textContent = oggi;
+      </script>
+	  <div class="news-topper-bottom">
+	    <div class="news-topper-bottom-left">
+		  <button>
+		    <span>SEZIONI</span>
+            <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+		  </button>
+		  <button>
+		    <span>EDIZIONI LOCALI</span>
+            <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+		  </button>
+		  <button>
+		    <span>SERVIZI</span>
+            <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+		  </button>
+	    </div>
+		<div class="news-topper-bottom-right">
+		  <button>Attualità1</button>
+		  <button>Attualità2</button>
+		  <button>Attualità3</button>
+		  <button>Attualità4</button>
+		  <button>Attualità5</button>
+		  <button>Attualità6</button>
+		  <button>Attualità7</button>
+		  <button>Attualità8</button>
+		  <button>Attualità9</button>
+		  <button>Attualità10</button>
+		  <button>Attualità11</button>
+		  <button>Attualità12</button>
+		</div>
+	  </div>
+    </div>
+  </div>
+  <div class="news">
+    <div class="news-block">
+	  <div class="news-block-12">
+	    <div class="league-dashboard">
+	      <span>MASTERS LEAGUE</span>
+	      <div class="league-dashboard-content">
+	        <div class="league-dashboard-past">
+	    	    <div class="soccer-team">
+	    		  <img width="20px" height="20px" src="images/fake_madrid.png">
+				  <span>FAKE MADRID</span>
+	    		</div>
+	    		<div class="league-score">
+	    		  <span>FINE</span>
+	    		  <span>6/7</span>
+	    		</div>
+	    	    <div class="soccer-team">
+	    		  <img width="20px" height="20px" src="images/pari_san_gennaro.png">
+				  <span>PARI SAN GENNARO</span>
+	    		</div>
+	    	  </div>
+	        <div class="league-dashboard-next">
+	    	    <div class="soccer-team">
+	    		  <img width="20px" height="20px" src="images/nazionale_scienziati.png">
+				  <span>NAZIONALE SCENZIATI</span>
+	    		</div>
+	    		<div class="league-calendar">
+	    		  <span>06/09</span>
+	    		  <span>ore</span>
+	    		  <span>22:30</span>
+	    		</div>
+	    	    <div class="soccer-team">
+	    		  <img width="20px" height="20px" src="images/lega_sud.png">
+				  <span>LEGA SUD</span>
+	    		</div>
+	    	  </div>
+	    	</div>
+		</div>
+	  </div>
+	</div>
+    <div class="news-block">
+	  <div class="news-block-8">
+	  News blocco 8 testo lungo abbastanza in tal modo da vedere come va a capo il contenuto dell'articolo nel caso dovesse essere lungo abbastanza da andare a capo
+	  </div>
+	  <div class="news-block-4">
+	  News blocco 4 testo lungo abbastanza in tal modo da vedere come va a capo il contenuto dell'articolo nel caso dovesse essere lungo abbastanza da andare a capo
+	  </div>
+	</div>
+    <div class="news-block">
+	  <div class="news-block-12">
+	  News blocco 12 testo lungo abbastanza in tal modo da vedere come va a capo il contenuto dell'articolo nel caso dovesse essere lungo abbastanza da andare a capo
+	  </div>
+	</div>
+  </div>
   <h1>Notizie</h1>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
   <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
   <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
   <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>

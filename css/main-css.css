@@ -3,6 +3,12 @@
   src: url('../fonts/Inter_24pt-Regular.ttf') format('truetype');
 }
 
+@media screen and (min-width: 800px) {
+  :root {
+    --rep-maxwidth: 996px;
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,22 +24,255 @@
 	margin: 0;
 }
 
-.main-header {
+.page-header {
   position: sticky;
-  margin: 0;
-  padding: 10px 16px;
+  overflow: visible;
   top: 0;
   border-bottom: 1px grey solid;
   color: #5a5a5a;
-  font-size: 14px;
   background-color: #fff;
 }
 
-.news-header {
+.page-header-content {
+  margin: 0 auto;
+  padding: 10px 16px;
+  color: #5a5a5a;
+  font-size: 14px;
+  background-color: #fff;
+  
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  max-width: var(--rep-maxwidth);
+}
+
+.page-header-content button {
   font-family: 'inter';
   display: flex;
+  align-items: center;
+  color: #5a5a5a;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 8px;
+  margin: 8
+}
+
+.page-header-content button:hover {
+  color: #4b88ca;
+}
+
+.page-header-left {
+  display: flex;
+  margin-right: auto;
+  gap: 16px;
+}
+
+.page-header-center {
+  display: flex;
+  margin: 0;
+}
+
+.page-header-center button {
+  font-size: 12px;
+}
+
+.page-header-right {
+  gap: 16px;
+  display: flex;
+  margin-left: auto;
+}
+
+.top-news-header {
+  font-family: 'inter';
   top: 0;
-  padding: 10px 16px;
+  background: #42505f;
+}
+
+.top-news-header-content {
+  top: 0;
+  margin: 0 auto;
+  padding: 10px 0px;
   background: #42505f;
   color: #fff;
+  
+  display:flex;
+  gap: 8px 16px;
+  max-width: var(--rep-maxwidth);
+}
+
+.news-topper {
+  font: 400 11px/1 'inter';
+  top: 0;
+}
+
+.news-topper-content {
+  margin: 0 auto;
+  max-width: var(--rep-maxwidth);
+  
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.news-topper-bottom {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  
+  margin: 0;
+  height: 50px;
+  max-width: var(--rep-maxwidth);
+}
+
+.news-topper-bottom-left {
+  border: 1px grey solid;
+  border-right: none;
+  white-space: nowrap;
+  display: flex;
+  gap: 32px;
+  padding: 16px;
+}
+
+.news-topper-bottom-left button {
+  font-family: 'inter';
+  display: flex;
+  align-items: center;
+  color: #5a5a5a;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 8px;
+  margin: 8
+}
+
+.news-topper-bottom-left button:hover {
+  color: #4b88ca;
+}
+
+.news-topper-bottom-right {
+  border: 1px grey solid;
+  
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 16px;
+  padding: 8px;
+}
+
+.news-topper-bottom-right button {
+  font-family: 'inter';
+  display: flex;
+  align-items: center;
+  color: #7e7e7e;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 8px;
+  margin: 8
+}
+.news-topper-bottom-right button:hover {
+  color: #4b88ca;
+}
+
+.news {
+  font-family: 'inter';
+  top: 0;
+}
+
+.news-block {
+  margin: 0 auto;
+  max-width: var(--rep-maxwidth);
+  
+  display: flex;
+}
+
+.news-block-8 {
+  flex: 1;
+  border: 1px grey solid;
+  border-top: none;
+  border-right: none;
+  width: 66%;
+}
+
+.news-block-4 {
+  max-width: 348px;
+  border: 1px grey solid;
+  border-top: none;
+  width: 34%;
+}
+
+.news-block-12 {
+  border: 1px grey solid;
+  border-top: none;
+  width: 100%;
+}
+
+.league-dashboard {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+.league-dashboard-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.league-dashboard-past {
+  margin-top: 4px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.league-dashboard-next {
+  margin-top: 4px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.league-score {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+
+.league-calendar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+
+.soccer-team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: calc(100% / 3);
 }
