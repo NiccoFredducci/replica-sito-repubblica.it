@@ -3,6 +3,16 @@
   src: url('../fonts/Inter_24pt-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'playfair';
+  src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'playfairbold';
+  src: url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+
 @media screen and (min-width: 800px) {
   :root {
     --rep-maxwidth: 996px;
@@ -31,6 +41,8 @@
   border-bottom: 1px grey solid;
   color: #5a5a5a;
   background-color: #fff;
+  z-index: 100002;
+  height: 50px;
 }
 
 .page-header-content {
@@ -206,6 +218,7 @@
   flex: 1;
   border: 1px grey solid;
   border-top: none;
+  border-bottom: none;
   border-right: none;
   width: 66%;
 }
@@ -220,6 +233,7 @@
 .news-block-12 {
   border: 1px grey solid;
   border-top: none;
+  border-bottom: none;
   width: 100%;
 }
 
@@ -244,6 +258,7 @@
   align-items: center;
   flex-direction: row;
   width: 100%;
+  height: 48px;
 }
 
 .league-dashboard-next {
@@ -253,20 +268,21 @@
   align-items: center;
   flex-direction: row;
   width: 100%;
+  height: 48px;
 }
 
 .league-score {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: calc(100% / 3);
+  width: 20%;
 }
 
 .league-calendar {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: calc(100% / 3);
+  width: 20%;
 }
 
 .soccer-team {
@@ -274,5 +290,109 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: calc(100% / 3);
+  width: 40%;
+}
+
+.news-block-8 {
+  padding: 0;
+}
+
+.section-title {
+  font-family: playfairbold;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 0 auto 16px;
+  width: fit-content;
+  border-bottom: 4px solid #F75B00;
+}
+
+.news-title {
+  font-family: playfairbold;
+  font-size: 32px;
+  /*line-height: 38px;*/
+  width: fit-content;
+  margin: 0 auto 16px;
+  text-align: center;
+  color: #222;
+  transition: color 0.2s ease;
+}
+
+.news-title:hover {
+  color: #5A5A5A;
+}
+
+.author {
+  margin: 0 auto;
+  font: italic 400 14px/16px playfair;
+  color: #5a5a5a;
+}
+
+.horizontal-content {
+  display:flex;
+}
+
+.news-category {
+  color: #F75B00;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.horizontal-content-text {
+  width: 30%;
+}
+
+.horizontal-content-image {
+  width: 70%;
+}
+
+.section-8 {
+  padding: 16px;
+  border-bottom: 1px grey solid;
+}
+
+.section-4 {
+  padding: 16px;
+  border-bottom: 1px grey solid;
+}
+
+.section-12 {
+  padding: 16px;
+  border-bottom: 1px grey solid;
+}
+
+.grid-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-content-column {
+  display: flex;
+  flex-direction: column; 
+}
+
+.grid-content-article {
+  margin: 16px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.grid-content-main-article {
+  padding: 16px;
+  padding-top: 0;
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+}
+
+.grid-news-title {
+  font-family: playfairbold;
+  font-size: 16px;
+  width: fit-content;
+  margin: 0 auto 16px;
+  text-align: left;
+  color: #222;
+  transition: color 0.2s ease;
+}
+
+.grid-news-title:hover {
+  color: #5A5A5A;
 }
