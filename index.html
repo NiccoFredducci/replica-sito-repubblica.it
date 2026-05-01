@@ -9,115 +9,173 @@
 </head>
 <body class="header-body">
   <div class="page-header">
+    <div class="subscribe-extra show-on-squeeze">
+	<button>
+      <span>ABBONATI</span>
+    </button>
+	</div>
     <div class="page-header-content">
       <div class="page-header-left">
-        <button>
+        <button id="open-menu-button">
           <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 6H20M4 12H20M4 18H20" stroke="#5a5a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span>Menu</span>
+          <span class="hide-on-squeeze">Menu</span>
         </button>
-        <button>
-          <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-           <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15C11.381 15 12.6296 14.4415 13.5355 13.5355C14.4415 12.6296 15 11.381 15 10C15 7.23858 12.7614 5 10 5ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.5719 16.481 13.0239 15.6063 14.1921L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.1921 15.6063C13.0239 16.481 11.5719 17 10 17C6.13401 17 3 13.866 3 10Z" fill="#5a5a5a"/>
+        <button class="hide-on-squeeze">
+          <svg width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+           <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15C11.381 15 12.6296 14.4415 13.5355 13.5355C14.4415 12.6296 15 11.381 15 10C15 7.23858 12.7614 5 10 5ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.5719 16.481 13.0239 15.6063 14.1921L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.1921 15.6063C13.0239 16.481 11.5719 17 10 17C6.13401 17 3 13.866 3 10Z"/>
           </svg>
           <span>Cerca</span>
         </button>
       </div>
       <div class="page-header-center">
-        <button>
+	    <img  class="page-header-logo show-on-squeeze" src="https://placehold.co/1337x240"><img>
+        <button class="subscribe-center hide-on-squeeze">
           <span>ABBONATI</span>
         </button>
       </div>
       <div class="page-header-right">
+	    <button class="subscribe-right hide-on-squeeze">
+          <span>ABBONATI</span>
+        </button>
         <button>
-  	      <span>Accedi</span>
+  	      <span class="hide-on-squeeze">Accedi</span>
           <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25Z" stroke="#5a5a5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12.1303 13C13.8203 13 15.1903 11.63 15.1903 9.94C15.1903 8.25001 13.8203 6.88 12.1303 6.88C10.4403 6.88 9.07031 8.25001 9.07031 9.94C9.07031 11.63 10.4403 13 12.1303 13Z" stroke="#5a5a5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M6.5 19.11C6.80719 17.8839 7.51529 16.7956 8.51178 16.0179C9.50827 15.2403 10.736 14.818 12 14.818C13.264 14.818 14.4917 15.2403 15.4882 16.0179C16.4847 16.7956 17.1928 17.8839 17.5 19.11" stroke="#5a5a5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 21.25C17.1086 21.25 21.25 17.1086 21.25 12C21.25 6.89137 17.1086 2.75 12 2.75C6.89137 2.75 2.75 6.89137 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.1303 13C13.8203 13 15.1903 11.63 15.1903 9.94C15.1903 8.25001 13.8203 6.88 12.1303 6.88C10.4403 6.88 9.07031 8.25001 9.07031 9.94C9.07031 11.63 10.4403 13 12.1303 13Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.5 19.11C6.80719 17.8839 7.51529 16.7956 8.51178 16.0179C9.50827 15.2403 10.736 14.818 12 14.818C13.264 14.818 14.4917 15.2403 15.4882 16.0179C16.4847 16.7956 17.1928 17.8839 17.5 19.11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
 	    </button>
       </div>
     </div>
   </div>
   <div class="top-news-header">
+    <div class="update show-on-squeeze">
+      <p style="text-transform: uppercase; letter-spacing: .32px; color: #969696; text-align: center;"><span class="date"></span></p>
+	</div>
     <div class="top-news-header-content">
-      <img src="images/notizia_header.png" style="aspect-ratio: 16 / 9; width:100%; height:auto; max-width: 166px;"></img>
-      <h2>Notizia di prova lunga abbastanza da far andare a capo il testo e verificarne il funzionamento</h2>
+      <img class="top-news-header-image" src="https://placehold.co/250x141/png"></img>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.</h2>
     </div>
   </div>
   <div class="news-topper">
     <div class="news-topper-content">
-      <img src="images/laRepubblica.png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></img>
-      <p style="text-transform: uppercase; letter-spacing: .32px; color: #a3a3a3; text-align: center;"><span id="data-odierna"></span></p>
-      <script>
-        const opzioni = { day: 'numeric', month: 'long', year: 'numeric' };
-        const oggi = new Date().toLocaleDateString('it-IT', opzioni);
-        document.getElementById('data-odierna').textContent = oggi;
-      </script>
+      <img class="hide-on-squeeze" src="https://placehold.co/1337x240/png" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></img>
+      <p class="hide-on-squeeze" style="text-transform: uppercase; letter-spacing: .32px; color: #969696; text-align: center;"><span class="date"></span></p>
 	  <div class="news-topper-bottom">
-	    <div class="news-topper-bottom-left">
-		  <button>
+	    <div class="news-topper-bottom-left hide-on-squeeze">
+		  <button id="dropdown-menu-button1">
 		    <span>SEZIONI</span>
-            <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="arrow1" width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 		  </button>
-		  <button>
+		  <button id="dropdown-menu-button2">
 		    <span>EDIZIONI LOCALI</span>
-            <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="arrow2" width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 		  </button>
-		  <button>
+		  <button id="dropdown-menu-button3">
 		    <span>SERVIZI</span>
-            <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="arrow3" width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 		  </button>
 	    </div>
 		<div class="news-topper-bottom-right">
-		  <button>Attualità1</button>
-		  <button>Attualità2</button>
-		  <button>Attualità3</button>
-		  <button>Attualità4</button>
-		  <button>Attualità5</button>
-		  <button>Attualità6</button>
-		  <button>Attualità7</button>
-		  <button>Attualità8</button>
-		  <button>Attualità9</button>
-		  <button>Attualità10</button>
-		  <button>Attualità11</button>
-		  <button>Attualità12</button>
+		  <button>Lorem</button>
+		  <button>Ipsum</button>
+		  <button>Dolor</button>
+		  <button>Sit</button>
+		  <button>Amet</button>
+		  <button>Consectetur</button>
+		  <button>Adipscing</button>
+		  <button>Elit</button>
+		  <button>Sed</button>
+		  <button>Do</button>
+		  <button>Eiusmod</button>
+		  <button>Tempor</button>
+		  <button>Incidunt</button>
+		  <button>Ut</button>
+		  <button>Labore</button>
+		  <button>Et</button>
+		  <button>Dolore</button>
+		  <button>Magna</button>
+		  <button>Aliqua</button>
+		</div>
+	    <div id="dropdown-menu1" class="dropdown-menu hidden-menu">
+		  <ul class="section-menu">
+		    <li>Lorem ipsum</li>
+		    <li>dolor sit</li>
+		    <li>Lorem ipsum</li>
+		    <li>dolor sit</li>
+		    <li>Lorem ipsum</li>
+		    <li>dolor sit</li>
+		    <li>Lorem ipsum</li>
+		    <li>dolor sit</li>
+		  </ul>
+		</div>
+		<div id="dropdown-menu2" class="dropdown-menu hidden-menu">
+		  <ul class="section-menu">
+		    <li>amet, consectetur</li>
+		    <li>adipiscing elit</li>
+		    <li>amet, consectetur</li>
+		    <li>adipiscing elit</li>
+		    <li>amet, consectetur</li>
+		    <li>adipiscing elit</li>
+		    <li>amet, consectetur</li>
+		    <li>adipiscing elit</li>
+		    <li>amet, consectetur</li>
+		    <li>adipiscing elit</li>
+		    <li>amet, consectetur</li>
+		    <li>adipiscing elit</li>
+		  </ul>
+		</div>
+		<div id="dropdown-menu3" class="dropdown-menu hidden-menu">
+		  <ul class="section-menu">
+		    <li>sed do</li>
+		    <li>eiudmod tempor</li>
+		    <li>sed do</li>
+		    <li>eiudmod tempor</li>
+		  </ul>
 		</div>
 	  </div>
     </div>
   </div>
   <div class="news">
     <div class="news-block">
+	  <div class="news-block-12 hide-on-squeeze">
+	    <div class="advert">
+		  <span>adv</span>
+		  <img src="https://placehold.co/1280x360/png" style="width:100%; height:auto; padding: 16px; padding-top: 0;"><img>
+		</div>
+	  </div>
+	</div>
+    <div class="news-block">
 	  <div class="news-block-12" style="border-bottom: none;">
 	    <div class="league-dashboard">
-	      <span>MASTERS LEAGUE</span>
+	      <span>CHAMPIONS LEAGUE</span>
 	      <div class="league-dashboard-content">
 	        <div class="league-dashboard-past">
 	    	    <div class="soccer-team">
-	    		  <img width="20px" height="20px" src="images/fake_madrid.png">
-				  <span>FAKE MADRID</span>
+	    		  <img width="20px" height="20px" src="https://placehold.co/20x20/png">
+				  <span>LOREM IPSUM</span>
 	    		</div>
 	    		<div class="league-score">
 	    		  <span style="font-size: 11px;">FINE</span>
 	    		  <span>6 7</span>
 	    		</div>
 	    	    <div class="soccer-team">
-	    		  <img width="20px" height="20px" src="images/pari_san_gennaro.png">
-				  <span>PARI SAN GENNARO</span>
+	    		  <img width="20px" height="20px" src="https://placehold.co/20x20/png">
+				  <span>LOREM IPSUM</span>
 	    		</div>
 	    	  </div>
 	        <div class="league-dashboard-next">
 	    	    <div class="soccer-team">
-	    		  <img width="20px" height="20px" src="images/nazionale_scienziati.png">
-				  <span>NAZIONALE SCENZIATI</span>
+	    		  <img width="20px" height="20px" src="https://placehold.co/20x20/png">
+				  <span>LOREM IPSUM</span>
 	    		</div>
 	    		<div class="league-calendar">
 	    		  <span style="font-size: 11px;">06/09</span>
@@ -125,8 +183,8 @@
 	    		  <span style="font-size: 11px;">22:30</span>
 	    		</div>
 	    	    <div class="soccer-team">
-	    		  <img width="20px" height="20px" src="images/lega_sud.png">
-				  <span>LEGA SUD</span>
+	    		  <img width="20px" height="20px" src="https://placehold.co/20x20/png">
+				  <span>LOREM IPSUM</span>
 	    		</div>
 	    	  </div>
 	    	</div>
@@ -137,68 +195,68 @@
 	  <div class="news-block-8">
 	    <div class="section-8">
 		  <div class="section-title">Primo piano</div>
-		  <img src="images/news_panels/news_1.jpg" style="width:100%; height: auto;"></img>
-		  <div class="news-title">Sezione per il news block '8' formattata a modo. Il testo continua per verificarne la funzionalità quando il testo è lungo abbastanza per andare a capo.</div>
-		  <div class="author" style="width: fit-content;">di Niccolò Fredducci e Fredducci Niccolò</div>
+		  <img src="https://placehold.co/1280x720/png" style="width:100%; height: auto;"></img>
+		  <div class="news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.</div>
+		  <div class="author" style="width: fit-content;">di Lorem Ipsum e Lorem Ipsum</div>
 		</div>
 		<div class="section-8">
 		  <div class="horizontal-content">
 		    <div class="horizontal-content-text">
-			  <div class="news-category">LE COSE</div>
-		      <div class="news-title" style="font-size: 26px; text-align: left;">Esempio di testo con immagine all'interno di una sezione</div>
-		      <div class="author">di Leonardo Da Vinci</div>
+			  <div class="news-category">LOREM IPSUM</div>
+		      <div class="news-title" style="font-size: 26px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.</div>
+		      <div class="author">di Lorem Ipsum</div>
 		    </div>
 			<div class="horizontal-content-image">
-    		  <img src="images/news_panels/news_2.jpg" style="width:100%; height: auto;"></img>
+    		  <img src="https://placehold.co/1280x720/png" style="width:100%; height: auto;"></img>
 			</div>
 		  </div>
 		</div>
 	  </div>
-	  <div class="news-block-4">
+	  <div class="news-block-4 hide-on-squeeze">
 	    <div class="section-4" style="position: sticky; top: 50px;">
-		  <div class="section-title">Il test del giorno</div>
-		  <img src="images/news_panels/news_4.jpg" style="width:100%; height: auto;"></img>
-		  <div class="news-title">Sezione per il news block '4' formattata a modo.</div>
-		  <div class="author" style="width: fit-content;">di Nobuyuki Fukumoto</div>
+		  <div class="section-title">Lorem Ipsum</div>
+		  <img src="https://placehold.co/720x1280/png" style="width:100%; height: auto;"></img>
+		  <div class="news-title">Lorem ipsum dolor sit amet.</div>
+		  <div class="author" style="width: fit-content;">di Lorem Ipsum</div>
 		</div>
 	  </div>
 	</div>
     <div class="news-block">
 	  <div class="news-block-12">
 	    <div class="section-12">
-		  <div class="section-title">Affari</div>
+		  <div class="section-title">Lorem</div>
 		  <div class="grid-content">
 		    <div class="grid-content-column">
 		      <div class="grid-content-article">
-			    <div class="grid-news-title">Esempio di testo articolo di affari breve 1</div>
-		        <div class="author">di Mario Rossi</div>
+			    <div class="grid-news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+		        <div class="author">di Lorem Ipsum</div>
 			  </div>
 		      <div class="grid-content-article">
-			    <div class="grid-news-title">Esempio di testo articolo di affari breve 2</div>
-		        <div class="author">di Mario Verdi</div>
+			    <div class="grid-news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+		        <div class="author">di Lorem Ipsum</div>
 			  </div>
 		      <div class="grid-content-article">
-			    <div class="grid-news-title">Esempio di testo articolo di affari breve 3</div>
-		        <div class="author">di Mario Blu</div>
+			    <div class="grid-news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+		        <div class="author">di Lorem Ipsum</div>
 			  </div>
 			</div>
 		    <div class="grid-content-main-article">
-		      <img src="images/news_panels/news_3.jpg" style="width:100%; height: auto;"></img>
-		      <div class="news-title" style="font-size: 26px;">Esempio di testo articolo principale di affari lungo abbastanza da andare a capo</div>
-		      <div class="author" style="width: fit-content;">di Pier Paolo Paolini</div>
+		      <img src="https://placehold.co/1280x720/png" style="width:100%; height: auto;"></img>
+		      <div class="news-title" style="font-size: 26px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua.</div>
+		      <div class="author" style="width: fit-content;">di Lorem Ipsum</div>
 		    </div>
 		    <div class="grid-content-column">
 		      <div class="grid-content-article">
-			    <div class="grid-news-title">Esempio di testo articolo di affari breve 4</div>
-		        <div class="author">di Lucia Rossi</div>
+			    <div class="grid-news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+		        <div class="author">di Lorem Ipsum</div>
 			  </div>
 		      <div class="grid-content-article">
-			    <div class="grid-news-title">Esempio di testo articolo di affari breve 5</div>
-		        <div class="author">di Lucia Verdi</div>
+			    <div class="grid-news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+		        <div class="author">di Lorem Ipsum</div>
 			  </div>
 		      <div class="grid-content-article">
-			    <div class="grid-news-title">Esempio di testo articolo di affari breve 6</div>
-		        <div class="author">di Lucia Blu</div>
+			    <div class="grid-news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+		        <div class="author">di Lorem Ipsum</div>
 			  </div>
 			</div>
 		  </div>
@@ -206,48 +264,230 @@
 	  </div>
 	</div>
   </div>
-  <h1>Notizie</h1>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
-  <p>Questo è un testo di prova lungo abbastanza da attivare lo scorrimento della pagina</p>
+  <div id="menu-overlay"></div>
+  <div id="side-menu">
+    <div class="menu-header">
+	  <div class="menu-header-content">
+	    <div class="menu-header-left">
+		  <img src="https://placehold.co/38x51/png"></img>
+	    </div>
+	    <div class="menu-header-center">
+		  <div class="menu-search">
+		    <input class="menu-search-input" type="search" required="" name="query" placeholder="Ricerca su Repubblica">
+			<svg width="45px" height="45px" viewBox="-5 -5 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15C11.381 15 12.6296 14.4415 13.5355 13.5355C14.4415 12.6296 15 11.381 15 10C15 7.23858 12.7614 5 10 5ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.5719 16.481 13.0239 15.6063 14.1921L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.1921 15.6063C13.0239 16.481 11.5719 17 10 17C6.13401 17 3 13.866 3 10Z" fill="#000"/>
+            </svg>
+		  </div>
+	    </div>
+	    <div class="menu-header-right">
+	      <button id="close-menu-button">✕</button>
+	    </div>
+	  </div>
+	</div>
+	<nav class="menu-list">
+      <ul class="menu-elements">
+        <li class="menu-item">
+		  <p class="menu-label">ABBONATI</p>
+		</li>
+        <li class="menu-item">
+		  <p class="menu-label">LOREM</p>
+		</li>
+        <li class="menu-item">
+		  <p class="menu-label">IPSUM</p>
+		</li>
+        <li class="menu-item">
+		  <p class="menu-label">DOLOR</p>
+		  <ul class="menu-sublist">
+		    <li>
+			  <a>Lorem</a>
+			</li>
+		    <li>
+			  <a>Ipsum</a>
+			</li>
+		    <li>
+			  <a>Dolor</a>
+			</li>
+		    <li>
+			  <a>Sit</a>
+			</li>
+		    <li>
+			  <a>Amet</a>
+			</li>
+		    <li>
+			  <a>Consectetur</a>
+			</li>
+		    <li>
+			  <a>Adipsing</a>
+			</li>
+		    <li>
+			  <a>Elit</a>
+			</li>
+		    <li>
+			  <a>Sed</a>
+			</li>
+		    <li>
+			  <a>Do</a>
+			</li>
+		    <li>
+			  <a>Eiusmod</a>
+			</li>
+		    <li>
+			  <a>Tempor</a>
+			</li>
+		  </ul>
+		</li>
+        <li class="menu-item">
+		  <p class="menu-label">SIT</p>
+		  <ul class="menu-sublist">
+		    <li>
+			  <a>Lorem</a>
+			</li>
+		    <li>
+			  <a>Ipsum</a>
+			</li>
+		    <li>
+			  <a>Dolor</a>
+			</li>
+		    <li>
+			  <a>Sit</a>
+			</li>
+		    <li>
+			  <a>Amet</a>
+			</li>
+		    <li>
+			  <a>Consectetur</a>
+			</li>
+		    <li>
+			  <a>Adipsing</a>
+			</li>
+		    <li>
+			  <a>Elit</a>
+			</li>
+		    <li>
+			  <a>Sed</a>
+			</li>
+		    <li>
+			  <a>Do</a>
+			</li>
+		    <li>
+			  <a>Eiusmod</a>
+			</li>
+		    <li>
+			  <a>Tempor</a>
+			</li>
+		    <li>
+			  <a>Incidunt</a>
+			</li>
+		    <li>
+			  <a>Ut</a>
+			</li>
+		    <li>
+			  <a>Labore</a>
+			</li>
+		    <li>
+			  <a>Et</a>
+			</li>
+		    <li>
+			  <a>Dolore</a>
+			</li>
+		    <li>
+			  <a>Magna</a>
+			</li>
+		    <li>
+			  <a>Aliqua</a>
+			</li>
+		  </ul>
+		</li>
+        <li class="menu-item">
+		  <p class="menu-label">AMET</p>
+		  <ul class="menu-sublist">
+		    <li>
+			  <a>Lorem</a>
+			</li>
+		    <li>
+			  <a>Ipsum</a>
+			</li>
+		    <li>
+			  <a>Dolor</a>
+			</li>
+		  </ul>
+		</li>
+      </ul>
+	</nav>
+	<ul class="menu-contact">
+	  <li>
+	    <p>Redazione</p>
+	  </li>
+	  <li>
+	    <p>Scriveteci</p>
+	  </li>
+	</ul>
+  </div>
+  <script>
+    const options = { day: 'numeric', month: 'long', year: 'numeric' };
+    const today = new Date().toLocaleDateString('it-IT', options);
+    document.querySelectorAll('.date').forEach(el => {
+      el.textContent = today;
+    });
+  </script>
+  <script>
+    const header = document.querySelector('.page-header');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script>
+    const open_button = document.getElementById("open-menu-button");
+    const close_button = document.getElementById("close-menu-button");
+    const overlay = document.getElementById("menu-overlay");
+    
+    function openMenu() {
+      document.body.classList.add("menu-open");
+	  window.scrollTo({ top: 0, behavior: "instant" });
+      document.body.style.overflow = "hidden";
+    }
+    
+    function closeMenu() {
+      document.body.classList.remove("menu-open");
+	  document.body.style.overflow = "";
+    }
+    
+    open_button.addEventListener("click", openMenu);
+    close_button.addEventListener("click", closeMenu);
+    overlay.addEventListener("click", closeMenu);
+  </script>
+  <script>
+  function setupDropdown(n) {
+    const btn = document.getElementById(`dropdown-menu-button${n}`);
+    const dropdown = document.getElementById(`dropdown-menu${n}`);
+    const arrow = document.getElementById(`arrow${n}`);
+    
+    btn.addEventListener("click", () => {
+      const isAlreadyOpen = !dropdown.classList.contains("hidden-menu");
+	  
+      for (let i = 1; i <= 3; i++) {
+        document.getElementById(`dropdown-menu${i}`).classList.add("hidden-menu");
+        document.getElementById(`arrow${i}`).classList.remove("rotate");
+      }
+  
+      if (isAlreadyOpen) {
+        dropdown.classList.add("hidden-menu");
+        arrow.classList.remove("rotate");
+      } else {
+        dropdown.classList.remove("hidden-menu");
+        arrow.classList.add("rotate");
+      }
+    });
+  }
+  
+  setupDropdown(1);
+  setupDropdown(2);
+  setupDropdown(3);
+  </script>
 </body>
 </html>
